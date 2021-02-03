@@ -18,3 +18,29 @@ print_r($sliceArray);
 
 
 //*********************Array Splice**************************** */
+echo "**********Array Splice Output*******************";
+
+$fruits   =['Mango', 'Apple', 'Carot', 'Painapple', 'Watermelon'];
+//remove all without indes 0 & 1----
+//array_splice($fruits, 2);
+
+//remove all without indes 0 & 1 and last element---
+//array_splice($fruits, 2,-1);
+
+//remove only last value--------
+//array_splice($fruits,-1);
+
+//remove only first value--------
+//array_splice($fruits,0, 1);
+
+  
+$addelement=['jackruit', 'Orange'];
+//add elemenet in replace position on array
+//array_splice($fruits, 2,2, $addelement);
+
+//add elemenet in first position on array
+//array_splice($fruits, 0, 0, $addelement);
+
+//add elemenet in last position on array
+array_splice($fruits, count($fruits), 0, $addelement);
+print_r($fruits);
