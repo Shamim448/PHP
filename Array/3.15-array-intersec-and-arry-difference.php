@@ -15,4 +15,4 @@ $a2=array("e"=>"red","f"=>"green","g"=>"blue");
 //Compare the values of two arrays, and return the differences:
 $result=array_diff($a1,$a2);
 print_r($result);
-?>
+?> 
